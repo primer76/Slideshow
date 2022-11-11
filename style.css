@@ -1,0 +1,152 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  justify-self: center;
+  align-items: center;
+  background: whitesmoke;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 530px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slide input {
+  display: none;
+}
+
+.st {
+  width: 20%;
+  transition: 2s;
+}
+
+.st img {
+  width: 800px;
+  height: 500px;
+}
+
+.nav-m {
+  position: absolute;
+  width: 550px;
+  margin-top: -179px;
+  justify-content: center;
+  display: flex;
+}
+
+.m-btn {
+  border: 1px solid whitesmoke;
+  padding: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.m-btn:not(:last-child) {
+  margin-right: 17px;
+}
+
+.m-btn:hover {
+  background-color: whitesmoke;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+
+.nav-auto {
+  position: absolute;
+  width: 550px;
+  margin-top: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-auto div {
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+.nav-auto div:not(:last-child) {
+  margin-right: 15px;
+  justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1 {
+  background-color: whitesmoke;
+}
+#radio2:checked ~ .nav-auto .a-b2 {
+  background-color: whitesmoke;
+}
+#radio3:checked ~ .nav-auto .a-b3 {
+  background-color: whitesmoke;
+}
+#radio4:checked ~ .nav-auto .a-b4 {
+  background-color: whitesmoke;
+}
+#radio5:checked ~ .nav-auto .a-b5 {
+  background-color: whitesmoke;
+}
+#radio6:checked ~ .nav-auto .a-b6 {
+  background-color: whitesmoke;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 16px;
+  color: black;
+  font-weight: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 2px;
+}
+
+.prev:hover, .next:hover {
+  background-color: darksalmon;
+}
